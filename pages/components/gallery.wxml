@@ -1,0 +1,6 @@
+<view class='gallery'>
+  <scroll-view scroll-x class="wrap" style='width:{{scrollHeight}}px'>
+    <image wx:for="{{list}}" wx:key='{{item.imgId}}' data-url="{{item.imgUrl}}" bindtap='galleryShow' style="width:{{itemWidth}}px" src='{{item.imgUrl}}' />
+  </scroll-view>
+  <slot></slot>
+</view>

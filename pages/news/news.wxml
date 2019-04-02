@@ -1,0 +1,20 @@
+<!--logs.wxml-->
+<view class="container new-list">
+  <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" style="height:{{scrollHeight}}px">
+    <block wx:for="{{newsList}}" wx:key="{{item.uniquekey}}">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_access" data-url='{{item.url}}' hover-class="weui-cell_active" bindtap='bindDetail'>
+          <view class="weui-cell__hd">
+            <image class="weui-cell-img" src="{{item.thumbnail_pic_s}}" style="vertical-align: middle;"></image>
+          </view>
+          <view class="weui-cell__bd">{{item.title}}</view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="page__bd">
+    <view class="weui-loadmore" wx:if="{{loading}}">
+      <view class="weui-loading"></view>
+    </view>
+  </view>
+</view>

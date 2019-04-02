@@ -1,0 +1,8 @@
+
+{
+	"navigationBarTitleText": "影片详情",
+  "usingComponents": {
+    "gallery": "../components/gallery"
+  }
+}
+  

@@ -1,0 +1,10 @@
+.gallery .wrap {
+  white-space: nowrap;
+  height: 140px;
+}
+
+.gallery .wrap image {
+  height: 320rpx;
+  padding: 10rpx;
+  display: inline-block;
+}

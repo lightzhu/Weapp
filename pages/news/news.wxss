@@ -1,0 +1,19 @@
+.new-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx;
+}
+.new-item {
+  margin: 10rpx;
+}
+.weui-cell{
+  padding:8px 5px;
+}
+.weui-cell-img{
+  width: 140rpx;
+  height:100rpx;
+  margin-right:20rpx ;
+}
+.weui-cell__bd{
+  font-size: 32rpx;
+}
