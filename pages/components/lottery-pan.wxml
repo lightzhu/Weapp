@@ -1,0 +1,8 @@
+<view class='lottery' style="height: {{heightCan+40}}px;">
+  <image class="bg-image" style="width: {{widthCan+25}}px; height: {{heightCan+25}}px;"src="../../images/pan.gif"></image>
+  <canvas style="width: {{widthCan}}px; height: {{heightCan}}px;" canvas-id="firstCanvas">
+  </canvas>
+  <view class="go-btn" bindtap='startLottery'>
+    <slot></slot>
+  </view>
+</view>

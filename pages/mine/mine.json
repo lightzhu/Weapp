@@ -1,3 +1,6 @@
 {
-	"navigationBarTitleText": "我的"
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "lottery-pan": "../components/lottery-pan"
+  }
 }
