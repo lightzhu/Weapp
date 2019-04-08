@@ -6,7 +6,7 @@
         <view class="prizeList" wx:for="{{redEnvelopeList}}" wx:key="{{index}}">
           <view class="prizeBox" style="transform: rotateX({{animation}}deg); transition-duration:{{time+index*1.2}}s">
             <view class="red-envelope" wx:for="{{item.list}}" wx:for-index="listkey" wx:for-item="listval" wx:key="{{listkey}}" 
-              style="transform:rotateX({{(360/item.list.length)*(listkey) - 100}}deg) translateZ({{250}}rpx);">
+              style="transform:rotateX({{(360/item.list.length)*(listkey)}}deg) translateZ({{250}}rpx);">
               <image src="{{listval.prizeImg?listval.prizeImg:'../../images/red_envelope.png'}}" mode="widthFix" />
               <text wx:if="{{listval.prizeImg?false:true}}">
                 {{listval.text}}等奖

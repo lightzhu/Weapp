@@ -96,7 +96,7 @@ Component({
       }]
     }
     ],
-    animation: -30,
+    animation: -20,
     time: 5,
   },
   attached: function() {
@@ -134,7 +134,6 @@ Component({
           }
         ]
       }, () => {
-        console.log(0);
         that.setData({
           animation: that.data.animation + 720
         })
