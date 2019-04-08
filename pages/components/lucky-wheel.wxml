@@ -1,0 +1,32 @@
+<view class="luckyWheel">
+  <view class="main">
+    <!--红包列表 -->
+    <view class="prizeContent-box">
+      <view class="prizeContent">
+        <view class="prizeList" wx:for="{{redEnvelopeList}}" wx:key="{{index}}">
+          <view class="prizeBox" style="transform: rotateX({{animation}}deg); transition-duration:{{time+index*1.2}}s">
+            <view class="red-envelope" wx:for="{{item.list}}" wx:for-index="listkey" wx:for-item="listval" wx:key="{{listkey}}" 
+              style="transform:rotateX({{(360/item.list.length)*(listkey) - 100}}deg) translateZ({{250}}rpx);">
+              <image src="{{listval.prizeImg?listval.prizeImg:'../../images/red_envelope.png'}}" mode="widthFix" />
+              <text wx:if="{{listval.prizeImg?false:true}}">
+                {{listval.text}}等奖
+              </text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--红包列表 -->
+    <!--按钮 -->
+    <view class="btn-box">
+      <button class="btn" type="default" bindtap='start' plain="{{true}}" hover-class="none">
+        <image src="../../images/btn.png" mode="widthFix" class="up" />
+        <image src="../../images/btn_press.png" mode="widthFix" class="press" />
+        <view class="text">
+         <button type="default" plain="true" hover-class="none">点击抽奖</button>
+        </view>
+      </button>
+    </view>
+    <!--按钮 -->
+  </view>
+</view>

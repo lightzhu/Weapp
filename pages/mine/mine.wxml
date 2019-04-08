@@ -1,4 +1,7 @@
 <!-- mine.wxml -->
-<lottery-pan heightCan="220" widthCan="220" bind:luckyDog="luckyDog">
-  <image style="width: 100%; height: 100%;" src="../../images/start-go.png"></image>
-</lottery-pan>
+<scroll-view>
+  <lottery-pan heightCan="220" widthCan="220" bind:luckyDog="luckyDog">
+    <image style="width: 100%; height: 100%;" src="../../images/start-go.png"></image>
+  </lottery-pan>
+  <lucky-wheel></lucky-wheel>
+</scroll-view>

@@ -1,0 +1,129 @@
+.luckyWheel {
+  width: 100vw;
+}
+/* 主体样式 */
+.luckyWheel .main {
+  padding-top: 50rpx;
+  width: 100vw;
+  min-height: calc(100vh - 300rpx);
+}
+/* 红包列表 */
+.prizeContent-box {
+  position: relative;
+  overflow: hidden;
+  background: #e44501;
+  perspective: 1000px;
+}
+
+.main .prizeContent {
+  padding-right: 6rpx;
+  height: 322rpx;
+  overflow: hidden;
+  background: #e44501;
+  border-radius: 16rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prizeBox {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transform-origin: 50% 50%;
+  animation-timing-function: ease;
+  align-items: flex-start;
+}
+
+.main .prizeContent .prizeList {
+  width: 177rpx;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@keyframes autoMove {
+  from {
+  }
+
+  to {
+    transform: rotateX(720deg);
+  }
+}
+
+.main .prizeContent .prizeList .red-envelope {
+  width: 100rpx;
+  position: absolute;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .prizeContent .prizeList .red-envelope image {
+  display: block;
+  width: 120rpx;
+}
+
+.main .prizeContent .prizeList .red-envelope text {
+  font-size: 26rpx;
+  color: #ffe04e;
+  position: absolute;
+}
+
+/* 按钮 */
+.btn-box {
+  text-align: center;
+}
+
+.luckyWheel .main .btn {
+  width: 536rpx;
+  height: 165rpx;
+  margin-top: 30px;
+  border: none;
+}
+
+.luckyWheel .main .btn:active .up {
+  opacity: 0;
+}
+
+.luckyWheel .main .btn:active .press {
+  opacity: 1;
+}
+
+.luckyWheel .main .btn:active .text {
+  transform: translate(0, 12rpx);
+}
+
+.luckyWheel .main .btn image {
+  left: 0;
+  width: 536rpx;
+  position: absolute;
+}
+
+.luckyWheel .main .btn image.press {
+  opacity: 0;
+  left: 0;
+  top: 12rpx;
+}
+
+.luckyWheel .main .btn .text {
+  width: 410rpx;
+  height: 106rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.main .btn .text button {
+  font-size: 40rpx;
+  color: #fff;
+  border: 0;
+  margin-top: 10rpx;
+  padding: 0;
+}

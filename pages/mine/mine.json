@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "我的",
   "usingComponents": {
-    "lottery-pan": "../components/lottery-pan"
+    "lottery-pan": "../components/lottery-pan",
+    "lucky-wheel":"../components/lucky-wheel"
   }
 }

@@ -31,7 +31,7 @@
         "selectedIconPath": "./images/news-a.png"
       },
       {
-        "text": "我的",
+        "text": "我的抽奖",
         "pagePath": "pages/mine/mine",
         "iconPath": "./images/mine.png",
         "selectedIconPath": "./images/mine-a.png"
